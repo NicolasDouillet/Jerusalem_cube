@@ -2,7 +2,7 @@ function [V, T] = Jerusalem_cube(nb_it, printable_ready, option_display)
 %% Jerusalem_cube : function to compute, display, and save
 % the Jerusalem cube at any iteration / depth level.
 %
-% Author & support : nicolas (dot) douillet (at) free.fr, 2021.
+% Author : nicolas.douillet9 (at) gmail.com, 2021-2024.
 %
 %
 % Syntax
@@ -577,9 +577,7 @@ F_new = [1 3 15 13; % Top layer top right corner cube
          101 107 143 137;
          102 101 137 138;
          108 102 138 144;
-         107 108 144 143;...
-    
-         % Bottom layer : + 48 = 4 x 24        
+         107 108 144 143;...          
     
          109 111 123 121; % Bottom layer top right corner cube
          181 183 195 193;
@@ -664,7 +662,7 @@ end % cube
 %% Squares to triangles conversion subfunction
 function [V, T] = squares2triangles(C)
 %
-% Author & support : nicolas.douillet (at) free.fr, 2017-2021.
+% Author : nicolas.douillet9 (at) gmail.com, 2017-2022.
 %
 % Split struct array into two arrays : vertices & facets
 
@@ -706,7 +704,7 @@ end % squares2triangles
 %% Display subfunction
 function [] = disp_Jerusalem_cube(V, T)
 %
-% Author & support : nicolas.douillet (at) free.fr, 2017-2021.
+% Author : nicolas.douillet9 (at) gmail.com, 2017-2022.
 
 figure;
 set(gcf,'Color',[1 1 1]), set(gca,'Color',[1 1 1]);
@@ -725,7 +723,7 @@ end % disp_Jerusalem_cube
 %% Remove duplicated vertices subfunction
 function [V_out, T_out] = remove_duplicated_vertices(V_in, T_in)
 %
-% Author & support : nicolas.douillet (at) free.fr, 2017-2021.
+% Author : nicolas.douillet9 (at) gmail.com, 2017-2022.
 
 tol = 1e4*eps;
 [V_out,~,n] = uniquetol(V_in,tol,'ByRows',true);

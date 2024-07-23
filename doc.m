@@ -3,7 +3,7 @@
 % Function to compute, display, and save the
 % Jerusalem cube at any iteration / depth level.
 %
-% Author & support : nicolas (dot) douillet (at) free.fr, 2021.
+% Author : nicolas.douillet9 (at) gmail.com, 2021-2024.
 %
 %% Syntax
 %
